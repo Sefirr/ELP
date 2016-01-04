@@ -1,0 +1,1 @@
+<?php echo 'Linterna LED Súper-Brillante'; ?>
