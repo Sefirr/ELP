@@ -37,7 +37,7 @@ CREATE TABLE IF NOT EXISTS `data_icon` (
 
 INSERT INTO `data_icon` (`name`, `text`) VALUES
 ('candy-crash', '¿Sabías que Candy Crash actualmente se rige por las leyes de protección de datos de Malta y no legislan de ninguna manera los anuncios que te muestran en la aplicación?'),
-('clash-of-clans', '¿Sabías que al jugar a Clash of Clans aceptas que no tienes ningún derecho \nsobre el contenido que publicas pero si eres responsable? Te quitan hasta los derechos morales si la ley lo permite.'),
+('clash-of-clans', '¿Sabías que al jugar a Clash of Clans aceptas que no tienes ningún derecho sobre el contenido que publicas pero si eres responsable? Te quitan hasta los derechos morales si la ley lo permite.'),
 ('facebook', '¿Sabias que al instalar Facebook en tu móvil le das permiso para leer tus SMS, llamar a números de teléfono e incluso cambiar tu fondo de pantalla del móvil?');
 
 --
