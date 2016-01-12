@@ -63,3 +63,7 @@ header {
 	margin-bottom:5%;
 	clear:both;
 }
+
+#facebook, #candycrush, #spotify, #telegram, #clashofclans, #twitter, #linterna, #skype, #amazon, #dropbox, #google, #snapchat, #vine, #whatsapp, #shazam, #instagram{
+	width: 100px;
+}
