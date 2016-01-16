@@ -53,6 +53,11 @@ header {
 	width:15%;
 	
 }
+
+#footer {
+	clear:both;
+}
+
 .tooltip-left {
 	float:left;
 	margin-bottom:5%;
@@ -65,5 +70,12 @@ header {
 }
 
 #facebook, #candycrush, #spotify, #telegram, #clashofclans, #twitter, #linterna, #skype, #amazon, #dropbox, #google, #snapchat, #vine, #whatsapp, #shazam, #instagram{
-	width: 60%;
+	width: 100px;
 }
+
+.right {
+	float: right;
+}
+.text-center {
+	text-align:center;
+} 
