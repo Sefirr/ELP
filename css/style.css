@@ -72,6 +72,9 @@ header {
 #facebook, #candycrush, #spotify, #telegram, #clashofclans, #twitter, #linterna, #skype, #amazon, #dropbox, #google, #snapchat, #vine, #whatsapp, #shazam, #instagram{
 	width: 60%;
 }
+#titlefont{
+	width: 980px;
+}
 
 .right {
 	float: right;
