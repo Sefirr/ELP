@@ -82,7 +82,7 @@ header {
 .text-center {
 	text-align:center;
 } 
-img .flotante {
+.flotante {
 	float:right;
    	display:scroll;
         position:fixed;
