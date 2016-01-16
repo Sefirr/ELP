@@ -3,7 +3,7 @@
 define('BD_HOST', 'localhost');
 define('BD_NAME', 'elp_bd');
 define('BD_USER', 'root');
-define('BD_PASS', '');
+define('BD_PASS', '1234');
 
 $BD = new mysqli(BD_HOST, BD_USER, BD_PASS, BD_NAME);
 if ( $BD->connect_errno ) {
