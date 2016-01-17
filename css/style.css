@@ -34,8 +34,14 @@ header {
 	padding: 15px 25px;
 	text-decoration: none;
 	text-shadow: 0 -1px 1px rgba(25, 123, 29, .7);
+
+	margin-left: 5%;
+	width: 20%;
 }
 
+#boton1{
+margin-left: 0%;
+}
 
 #left {
 	float: left;
@@ -69,9 +75,22 @@ header {
 	clear:both;
 }
 
-#facebook, #candycrush, #spotify, #telegram, #clashofclans, #twitter, #linterna, #skype, #amazon, #dropbox, #google, #snapchat, #vine, #whatsapp, #shazam, #instagram{
+#tooltip-center{
+clear:both; 
+}
+
+#facebook, #candycrush, #spotify, #telegram, #clashofclans, #twitter, #linterna, #skype, #amazon, #snapchat, #vine{
 	width: 60%;
 }
+
+#instagram, #whatsapp, #shazam, #google, #dropbox{
+
+	width:15%;
+	margin-left:3%;
+	margin-top:2%;
+}
+
+
 #titlefont{
 	width: 100%;
 }
@@ -86,4 +105,9 @@ header {
 	float:right;
    	display:scroll;
         position:fixed;
+}
+
+#video{
+	width:100%;
+	height: 67em;
 }
