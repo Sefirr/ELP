@@ -1,4 +1,27 @@
 $(document).ready(function(){
+
+/**************TOP**************/
+	$('#compare').tooltipster({
+
+	trigger:'click',
+
+    functionInit: function(origin, content) { 
+
+		$.ajax({
+
+			type: 'POST',
+			url: 'compare.php',
+			success: function(data) {
+				origin.tooltipster('content', data);
+			}
+		});
+    },
+	interactive: true,
+	position: 'bottom',
+	contentAsHTML: true
+});
+
+/*************RIGHT***************/
 	$('#facebook').tooltipster({
 	trigger:'click',
     functionInit: function(origin, content) { 
@@ -74,53 +97,8 @@ $(document).ready(function(){
 	position: 'right',
 	contentAsHTML: true
 });
-	$('#snapchat').tooltipster({
-	trigger:'click',
-    functionInit: function(origin, content) { 
-		$.ajax({
-			type: 'POST',
-			url: 'snapchat.php',
-			success: function(data) {
-				origin.tooltipster('content', data);
-			}
-		});
-    },
-	interactive: true, 
-	position: 'right',
-	contentAsHTML: true
-});
-	$('#instagram').tooltipster({
-	trigger:'click',
-    functionInit: function(origin, content) { 
-		$.ajax({
-			type: 'POST',
-			url: 'instagram.php',
-			success: function(data) {
-				origin.tooltipster('content', data);
-			}
-		});
-    },
-	interactive: true, 
-	position: 'right',
-	contentAsHTML: true
-});
-	$('#whatsapp').tooltipster({
-	trigger:'click',
-    functionInit: function(origin, content) { 
-		$.ajax({
-			type: 'POST',
-			url: 'whatsapp.php',
-			success: function(data) {
-				origin.tooltipster('content', data);
-			}
-		});
-    },
-	interactive: true, 
-	position: 'right',
-	contentAsHTML: true
-});
 
-/*****************************************************/
+/************************LEFT*****************************/
 
 	$('#clashofclans').tooltipster({
 	trigger:'click',
@@ -182,20 +160,6 @@ $(document).ready(function(){
 	position: 'left',
 	contentAsHTML: true
 });
-	$('#shazam').tooltipster({
-	trigger:'click',
-    functionInit: function(origin, content) { 
-		$.ajax({
-			type: 'POST',
-			url: 'shazam.php',
-			success: function(data) {
-				origin.tooltipster('content', data);
-			}
-		});
-    },
-	position: 'left',
-	contentAsHTML: true
-});
 	$('#amazon').tooltipster({
 	trigger:'click',
     functionInit: function(origin, content) { 
@@ -207,7 +171,73 @@ $(document).ready(function(){
 			}
 		});
     },
+	interactive: true,
 	position: 'left',
+	contentAsHTML: true
+});
+
+/********************TOP***********************/
+
+$('#snapchat').tooltipster({
+	trigger:'click',
+    functionInit: function(origin, content) { 
+		$.ajax({
+			type: 'POST',
+			url: 'snapchat.php',
+			success: function(data) {
+				origin.tooltipster('content', data);
+			}
+		});
+    },
+	interactive: true, 
+	position: 'top',
+	contentAsHTML: true
+});
+	$('#instagram').tooltipster({
+	trigger:'click',
+    functionInit: function(origin, content) { 
+		$.ajax({
+			type: 'POST',
+			url: 'instagram.php',
+			success: function(data) {
+				origin.tooltipster('content', data);
+			}
+		});
+    },
+	interactive: true, 
+	position: 'top',
+	contentAsHTML: true
+});
+
+	$('#shazam').tooltipster({
+	trigger:'click',
+    functionInit: function(origin, content) { 
+		$.ajax({
+			type: 'POST',
+
+			url: 'shazam.php',
+			success: function(data) {
+				origin.tooltipster('content', data);
+			}
+		});
+    },
+	interactive: true,
+	position: 'top',
+	contentAsHTML: true
+});
+	$('#whatsapp').tooltipster({
+	trigger:'click',
+    functionInit: function(origin, content) { 
+		$.ajax({
+			type: 'POST',
+			url: 'whatsapp.php',
+			success: function(data) {
+				origin.tooltipster('content', data);
+			}
+		});
+    },
+	interactive: true, 
+	position: 'top',
 	contentAsHTML: true
 });
 	$('#dropbox').tooltipster({
@@ -221,7 +251,8 @@ $(document).ready(function(){
 			}
 		});
     },
-	position: 'left',
+	interactive: true,
+	position: 'top',
 	contentAsHTML: true
 });
 	$('#google').tooltipster({
@@ -235,7 +266,8 @@ $(document).ready(function(){
 			}
 		});
     },
-	position: 'left',
+	interactive: true,
+	position: 'top',
 	contentAsHTML: true
 });
 });
